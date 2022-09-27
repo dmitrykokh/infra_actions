@@ -55,7 +55,6 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-
         script: |
           sudo docker pull mrdnk88/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
